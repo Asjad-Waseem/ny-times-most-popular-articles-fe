@@ -4,7 +4,7 @@ import Dropdown from "@components/buttons/dropdown";
 import Article from "@sections/article";
 import { MostPopularArticlesService } from "@api/services";
 import { ArticleProps } from "@sections/article/types";
-import { FEED_TITLE, FEED_SUBTITLE, DAY_OPTIONS } from "@constants";
+import { FEED_TITLE, FEED_SUBTITLE, DAY_OPTIONS } from "../../constants";
 
 const Feed = (): JSX.Element => {
   const { fetchMostPopularArticles } = MostPopularArticlesService;

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { BiChevronDown } from "react-icons/bi";
 
-import ArticleCardContent from "@components/content/articleCardContentBasic";
 import ArticleCardContentBasic from "@components/content/articleCardContentBasic";
 import ArticleCardContentNested from "@components/content/articleCardContentNested";
 import { ArticleProps } from "./types";
@@ -52,20 +51,20 @@ const Article = ({
           isOpen ? "h-auto" : "h-0"
         }`}
       >
-        <ArticleCardContent label="Id" value={id} />
-        <ArticleCardContent label="Uri" value={uri} />
-        <ArticleCardContent label="Url" value={url} />
-        <ArticleCardContent label="Asset Id" value={asset_id} />
-        <ArticleCardContent label="Source" value={source} />
-        <ArticleCardContent label="Updated" value={updated} />
-        <ArticleCardContent label="Section" value={section} />
-        <ArticleCardContent label="Subsection" value={subsection} />
-        <ArticleCardContent label="NYDT Section" value={nytdsection} />
-        <ArticleCardContent label="Adx Keywords" value={adx_keywords} />
-        <ArticleCardContent label="Column" value={column} />
-        <ArticleCardContent label="Byline" value={byline} />
-        <ArticleCardContent label="Type" value={type} />
-        <ArticleCardContent label="Abstract" value={abstract} />
+        <ArticleCardContentBasic label="Id" value={id} />
+        <ArticleCardContentBasic label="Uri" value={uri} />
+        <ArticleCardContentBasic label="Url" value={url} />
+        <ArticleCardContentBasic label="Asset Id" value={asset_id} />
+        <ArticleCardContentBasic label="Source" value={source} />
+        <ArticleCardContentBasic label="Updated" value={updated} />
+        <ArticleCardContentBasic label="Section" value={section} />
+        <ArticleCardContentBasic label="Subsection" value={subsection} />
+        <ArticleCardContentBasic label="NYDT Section" value={nytdsection} />
+        <ArticleCardContentBasic label="Adx Keywords" value={adx_keywords} />
+        <ArticleCardContentBasic label="Column" value={column} />
+        <ArticleCardContentBasic label="Byline" value={byline} />
+        <ArticleCardContentBasic label="Type" value={type} />
+        <ArticleCardContentBasic label="Abstract" value={abstract} />
         <ArticleCardContentNested label="DES Facet" options={des_facet} />
         <ArticleCardContentNested label="ORG Facet" options={org_facet} />
         <ArticleCardContentNested label="PER Facet" options={per_facet} />
