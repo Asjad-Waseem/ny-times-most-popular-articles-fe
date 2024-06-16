@@ -24,10 +24,12 @@
     "paths": {
       "@api/*": ["api/*"],
       "@assets/*": ["assets/*"],
-      "@components/*": ["components/*"],
-      "@constants/*": ["constants/*"],
-      "@pages/*": ["pages/*"],
-      "@sections/*": ["sections/*"],
+      "@components": ["components/index"], // Points directly to the index file
+      "@components/*": ["components/*/index", "components/*"],
+      "@pages": ["pages/index"],
+      "@pages/*": ["pages/*/index", "pages/*"], // Handles nested index.tsx and other files
+      "@sections": ["sections/index"],
+      "@sections/*": ["sections/*/index", "sections/*"],
       "@utils/*": ["utils/*"]
     }
   },
